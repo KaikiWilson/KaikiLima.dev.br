@@ -5,12 +5,12 @@
     font-family: 'Kanit', sans-serif;
 }
 
-body {
+.Main-About {
     background-color: #000000e8;
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+.Main-About::-webkit-scrollbar {
     width: 0;
 }
 
@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
     width: 100vw;
     min-height: 50vh;
 
-    background-image: url(../img/background-port.jpg);
+    background-image: url(./img/background-port.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

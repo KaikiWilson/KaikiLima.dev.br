@@ -1,9 +1,9 @@
 import './App.css';
-import Welcome from './Pages/Welcome/Welcome';
+import MyRoutes from "./routes";
 
 function App() {
   return (
-    <Welcome/>
+    <MyRoutes/>
   );
 }
 

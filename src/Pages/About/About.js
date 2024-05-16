@@ -1,9 +1,9 @@
-
+import './assets/About.css'
 
 
 const About = () => {
     return(
-        <main>
+        <main class='Main-About'>
             <div id="box-h1-princ-id" class="box-h1-princ">
                 <div id="box-first-h1-id" class="box-first-h1">
                     <h1 class="first-h1">In the end...</h1>
@@ -83,6 +83,5 @@ const About = () => {
         </main>
     )
 }
-
 
 export default About;

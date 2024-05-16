@@ -1,10 +1,12 @@
-import './assets/Welcome.css'
+import '../assets/Welcome.css';
 import React from 'react';
 import Typed from 'typed.js';
+import myphoto from './img/KaikiLima.png';
+import { Link } from 'react-router-dom';
 
 
 
-const Welcome = () => {
+const WelcomePage = () => {
 
     const el = React.useRef(null);
 
@@ -29,24 +31,24 @@ const Welcome = () => {
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
             </head>
             
-            <body>
+            <body class='body-Welcome'>
 
                 <header class="header">
-                    <a href="https://github.com/KaikiWilson" class="logo">@Dev_oKaiJr</a>
+                    <a href="https://github.com/KaikiWilson" class="logo">@Kaikilima.Dev</a>
 
                     <nav class="navbar">
-                        <a href="#" class="active">Home</a>
-                        <a href="#">About me</a>
-                        <a href="#">Soft/Hard Skills</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact</a>
+                        <Link to="/" class="active">Home</Link>
+                        <Link to="/About">About me</Link>
+                        <Link to="/">Soft/Hard Skills</Link>
+                        <Link to="/">Projects</Link>
+                        <Link to="/">Contact</Link>
                     </nav>
                 </header>
 
                 <section class="home">
 
                     <div class="home-img">
-                        <h1>imagem foda</h1>
+                        <img src={myphoto} alt='KaikiLima'/>
                     </div>
 
                     <div class="home-content">
@@ -59,7 +61,9 @@ const Welcome = () => {
                                 <a href="https://www.linkedin.com/in/kaikiwilson/"><i class='bx bxl-linkedin-square' ></i></a>
                                 <a href="https://github.com/KaikiWilson"><i class='bx bxl-github' ></i></a>
                             </div>
-                            <button class="btn">My resume in PDF</button>
+                            <button class="btn">
+                                <a href='/Profile.pdf' rel='noopener noreferrer' download="Kaikiwilson-resume">My resume in PDF</a>
+                            </button>
                     </div>
                 </section>
                 
@@ -70,4 +74,4 @@ const Welcome = () => {
     );
 }
 
-export default Welcome;
+export default WelcomePage;
