@@ -1,13 +1,12 @@
-import '../assets/Welcome.css';
 import React from 'react';
-import Typed from 'typed.js';
-import myphoto from './img/KaikiLima.png';
+import myphoto from '../img/KaikiLima.png';
 import { Link } from 'react-router-dom';
+import Typed from 'typed.js';
 
 
 
-const WelcomePage = () => {
-
+const HomePage = () => {
+    
     const el = React.useRef(null);
 
     React.useEffect(() => {
@@ -24,7 +23,7 @@ const WelcomePage = () => {
           typed.destroy();
         };
       }, []);
-
+    
     return(
         <>
             <head>
@@ -62,7 +61,7 @@ const WelcomePage = () => {
                                 <a href="https://github.com/KaikiWilson"><i class='bx bxl-github' ></i></a>
                             </div>
                             <button class="btn">
-                                <a href='/Profile.pdf' rel='noopener noreferrer' download="Kaikiwilson-resume">My resume in PDF</a>
+                                <a target='_blank' href='/Profile.pdf' rel='noopener noreferrer' download="Kaikiwilson-resume">My resume in PDF</a>
                             </button>
                     </div>
                 </section>
@@ -74,4 +73,5 @@ const WelcomePage = () => {
     );
 }
 
-export default WelcomePage;
+
+export default HomePage;

@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
-import WelcomePage from "./Pages/Welcome/Welcome";
-import About from "./Pages/About/About";
+import HomePage from "./Components/pages/HomePage";
+import AboutPage from "./Components/pages/AboutPage";
 
 const MyRoutes = () => {
    return(
        <BrowserRouter>
             <Routes>
-                <Route index element = { <WelcomePage/> }  path="/" exact />
-                <Route element = { <About/> }  path="/About" />
+                <Route index element = { <HomePage/> }  path="/" exact />
+                <Route element = { <AboutPage/> }  path="/About" />
             </Routes>
        </BrowserRouter>
    )

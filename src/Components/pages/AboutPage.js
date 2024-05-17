@@ -1,7 +1,7 @@
-import './assets/About.css'
+import '../css/About.css'
 
 
-const About = () => {
+const AboutPage = () => {
     return(
         <main class='Main-About'>
             <div id="box-h1-princ-id" class="box-h1-princ">
@@ -84,4 +84,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default AboutPage;
