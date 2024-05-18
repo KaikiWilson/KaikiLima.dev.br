@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  .body-Welcome {
+    background: rgb(0, 0, 59);
+    color: #fff;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    border-radius: 5px;
+  
+    transition: .25s;
+  }
+  
+  .logo:hover {
+    background-color: #fafafa;
+    color: rgb(0, 0, 59);
+    padding: 3px;
+  
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px #fafafa;
+    transition: .25s;
+  }
+  
+  .navbar a, .navbar Link {
+    display: inline-block;
+    height: max-content;
+    position: relative;
+    font-size: 18px;
+    opacity: 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;    
+    animation: slideTop 5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    border-bottom: 2px solid transparent;
+  
+    transition: .3s;
+  }
+  
+  .navbar .active {
+    color: rgb(0, 255, 136);
+  }
+  
+  .navbar a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 255, 136);
+    visibility: hidden;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+  }
+  
+  .navbar a:hover {
+    color: rgb(0, 255, 136);
+  }
+  
+  .navbar a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  .home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+  }
+  
+  .home-content {
+    max-width: 600px;
+  }
+  
+  .home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+  }
+  
+  .home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+  }
+  
+  .home-content h3 span {
+    color: rgb(0, 255, 136);
+  }
+  
+  .home-content h1 {
+    font-size: 56px;
+    opacity: 0;
+    font-weight: 700;
+    margin: -3px 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+  }
+  
+  .home-content p {
+    font-size: 16px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+  }
+  
+  .home-img img {
+    max-width: 450px;
+    opacity: 0;
+    margin-right: -20px;
+    border-radius: 25% 85% 25% 100%;
+    animation: zoonIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+  }
+  
+  .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 136);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(0, 255, 136);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+  }
+  
+  .social-media a:hover {
+    background-color: rgb(0, 255, 136);
+    color: #1f242d;
+    box-shadow: 0 0 20px rgb(0, 255, 136);
+  }
+  
+  .btn a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1f242d;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(0, 255, 136);
+    border-radius: 40px;
+    box-shadow: 0 0 25px rgb(0, 255, 136);
+    
+    
+    letter-spacing: 1px;
+    
+    
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    transition: .25s;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: #fff;
+    text-shadow: 0px 0px 25px #fff;
+    box-shadow: 0px 0px 50px rgb(0, 255, 136);
+    transition: .1s;
+  }
+  
+  @keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }    
+  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }    
+  
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }    
+  
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }    
+  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes zoonIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }    
+  
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    } 
+  }

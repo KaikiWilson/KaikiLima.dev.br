@@ -1,7 +1,8 @@
 import React from 'react';
-import myphoto from '../img/KaikiLima.png';
+import myphoto from './KaikiLima.png';
 import { Link } from 'react-router-dom';
 import Typed from 'typed.js';
+import './HomePage.css'
 
 
 

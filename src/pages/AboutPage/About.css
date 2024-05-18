@@ -20,7 +20,7 @@
     width: 100vw;
     min-height: 50vh;
 
-    background-image: url(../img/background-port.jpg);
+    background-image: url(./background-port.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
