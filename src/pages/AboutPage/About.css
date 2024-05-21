@@ -6,8 +6,8 @@
 }
 
 .Main-About {
-    background-color: #000000e8;
-    overflow-x: hidden;
+    background-color: rgb(0, 0, 59);
+    min-height: 100vh;
 }
 
 .Main-About::-webkit-scrollbar {
@@ -37,7 +37,7 @@
     align-items: end;
     width: 100vw;
     height: max-content;
-    background-color: #ffffff21;
+    background-color: #ffffff16;
 
     animation-name: left-slide-in;
     animation-duration: 1.5s;
@@ -51,7 +51,7 @@
     align-items: start;
     width: 100vw;
     height: max-content;
-    background-color: #ffffff09;
+    background-color: #ffffff1d;
 
     animation-name: right-slide-in;
     animation-duration: 1.5s;
@@ -114,6 +114,7 @@
     color: rgb(255, 255, 255);
     font-size: 50px;
     font-weight: bold;
+    text-shadow: 0px -2px 7.5px #fff;
     box-shadow: 0px 0px 10px 1px #00000063;
 }
 
@@ -213,18 +214,18 @@
     transition: .3s;
 
     .box-img {
-        transform: translateY(-100px);
+        transform: translateY(0);
         transition: .3s;
     }
     
     img {
-        width: 150px;
+        transform: translateY(30px);
 
         transition: .3s;
     }
 
     h1 {
-        transform: translateY(-100px);
+        transform: translateY(-50px);
 
         transition: .3s;
     }
@@ -274,7 +275,7 @@
 
 .box-img {
     width: 100%;
-    height: 75%;
+    height: 50%;
     display: flex;
     justify-content: center;
 
@@ -282,20 +283,23 @@
 }
 
 .cards img {
-    width: 100px;
+    width: 64px;
+    height: 64px;
 
     transition: .20s;
 }
 
 .cards h1 {
     width: 100%;
-    height: 25%;
+    height: 50%;
 
     display: flex;
     justify-content: center;
     
-    color: #000;
-    font-weight: 200;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 0px 0px 3px #000000;
 
     transition: .20s;
 }

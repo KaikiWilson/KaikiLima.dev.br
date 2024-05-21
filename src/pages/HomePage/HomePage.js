@@ -12,9 +12,9 @@ const HomePage = () => {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Front-End Developer", "Graduating ADS", "Full-Stack Student", "UI/UX Design Student", "Professional of IT"],
-            typeSpeed: 75,
-            backSpeed: 100,
+            strings: ["Desenvolvedor Front-End", "Acadêmico de ADS", "Estudante Full-Stack", "UI/UX Designer", "Profissional de TI"],
+            typeSpeed: 50,
+            backSpeed: 35,
             backDelay: 1000,
             loop: true
         });
@@ -27,17 +27,17 @@ const HomePage = () => {
     
     return(
         <>
-            <head>
-                <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
-            </head>
             
-            <body class='body-Welcome'>
+                <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+            
+            
+            <main className='body-Welcome'>
 
-                <header class="header">
-                    <a href="https://github.com/KaikiWilson" class="logo">@Kaikilima.Dev</a>
+                <header className="header">
+                    <a target='_blank' rel = "noopener noreferrer"  href="https://github.com/KaikiWilson" className="logo">@Kaikilima.Dev</a>
 
-                    <nav class="navbar">
-                        <Link to="/" class="active">Home</Link>
+                    <nav className="navbar">
+                        <Link to="/" className="active">Home</Link>
                         <Link to="/About">About me</Link>
                         <Link to="/">Soft/Hard Skills</Link>
                         <Link to="/">Projects</Link>
@@ -45,31 +45,31 @@ const HomePage = () => {
                     </nav>
                 </header>
 
-                <section class="home">
+                <section className="home">
 
-                    <div class="home-img">
+                    <div className="home-img">
                         <img src={myphoto} alt='KaikiLima'/>
                     </div>
 
-                    <div class="home-content">
-                        <h3>Hello! I'm</h3>
+                    <div className="home-content">
+                        <h3>Olá! Eu sou o</h3>
                         <h1>Kaiki Wilson</h1>
-                        <h3>And i'm <span ref={el}></span></h3>
-                        <p>I am passionate about developing web solutions using the most diverse current tools on the market, as well as following Good Practices and Agile Methodologies.</p>
-                            <div class="social-media">
-                                <a href="https://www.instagram.com/dev_okaijr/"><i class='bx bxl-instagram-alt' ></i></a>
-                                <a href="https://www.linkedin.com/in/kaikiwilson/"><i class='bx bxl-linkedin-square' ></i></a>
-                                <a href="https://github.com/KaikiWilson"><i class='bx bxl-github' ></i></a>
+                        <h3>Apenas um <span ref={el}></span></h3>
+                        <p>Sou apaixonado por desenvolver soluções web utilizando as mais diversas ferramentas atuais do mercado, além de seguir Boas Práticas e Metodologias Ágeis.</p>
+                            <div className="social-media">
+                                <a target='_blank' rel = "noopener noreferrer" href="https://www.instagram.com/dev_okaijr/"><i className='bx bxl-instagram-alt' ></i></a>
+                                <a target='_blank' rel = "noopener noreferrer" href="https://www.linkedin.com/in/kaikiwilson/"><i className='bx bxl-linkedin-square' ></i></a>
+                                <a target='_blank' rel = "noopener noreferrer" href="https://github.com/KaikiWilson"><i className='bx bxl-github' ></i></a>
                             </div>
-                            <button class="btn">
-                                <a target='_blank' href='/Profile.pdf' rel='noopener noreferrer' download="Kaikiwilson-resume">My resume in PDF</a>
+                            <button className="btn">
+                                <a target='_blank' rel = "noopener noreferrer" href='/Profile.pdf' download="Kaikiwilson-resume">My resume in PDF</a>
                             </button>
                     </div>
                 </section>
                 
 
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-            </body>
+            </main>
         </>
     );
 }
