@@ -91,9 +91,9 @@ const AboutPage = () => {
             <h2 id="about-me-subtitle-id" className="about-me-subtitle"> Como dito anteriormente, meu nome é <span className="span-subtitle">Kaiki Wilson</span> e eu sou um <span className="span-subtitle">Desenvolvedor Front-End</span>.</h2>
             
             <div id="box-about-me-content-id" className="box-about-me-content">
-                <span className="about-me-content">Além do conhecimento <span className="span-content">Back-end</span>, tenho dominio e habilidades sólidas em desenvolvimento web <span className="span-content">Fron-End</span>,
-                sempre focando em desenvolver com todas as <span className="span-content">boas práticas</span>, bem como os métodos de <span className="span-content">SEO </span>
-                obtendo o melhores resultados na sua aplicação. Como também, não deixando de lado a <span className="span-content">acessibilidade</span> da página para os todos os usuários visitantes.</span>
+                <span className="about-me-content">Além do conhecimento em <span className="span-content">Back-end</span>, tenho dominio e habilidades sólidas em desenvolvimento web <span className="span-content">Fron-End</span>,
+                pensando primordialmente em desenvolver utilizando-se de todas as <span className="span-content">boas práticas</span> atuais, como também os métodos de <span className="span-content">SEO </span>
+                com a finalidade de obter os melhores resultados de <span className="span-content">pesquisa</span> e de <span className="span-content">acessos</span> da sua aplicação. Além do mais, não podemos esquecer da grandiosa <span className="span-content">acessibilidade</span> da página para todos os usuários visitantes, fazendo com que seu website se torne um lugar acessivel para <span className="span-content">todos</span>.</span>
             </div>
 
             <section id="title-cards-id" className="title-cards">Tecnologias que tenho conhecimento</section>
