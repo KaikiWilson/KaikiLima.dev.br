@@ -29,6 +29,7 @@ const HomePage = () => {
         <>
             
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
             
             
             <main className='body-Welcome'>
@@ -37,6 +38,9 @@ const HomePage = () => {
                     <a target='_blank' rel = "noopener noreferrer"  href="https://github.com/KaikiWilson" className="logo">@Kaikilima.Dev</a>
 
                     <nav className="navbar">
+                    
+                        <span className='material-symbols-outlined none'>menu</span>
+
                         <Link to="/" className="active">Home</Link>
                         <Link to="/About">About me</Link>
                         <Link to="/">Soft/Hard Skills</Link>
@@ -55,15 +59,17 @@ const HomePage = () => {
                         <h3>Olá! Eu sou o</h3>
                         <h1>Kaiki Wilson</h1>
                         <h3>Apenas um <span ref={el}></span></h3>
-                        <p>Sou apaixonado por desenvolver soluções web utilizando as mais diversas ferramentas atuais do mercado, além de seguir Boas Práticas e Metodologias Ágeis.</p>
-                            <div className="social-media">
-                                <a target='_blank' rel = "noopener noreferrer" href="https://www.instagram.com/dev_okaijr/"><i className='bx bxl-instagram-alt' ></i></a>
-                                <a target='_blank' rel = "noopener noreferrer" href="https://www.linkedin.com/in/kaikiwilson/"><i className='bx bxl-linkedin-square' ></i></a>
-                                <a target='_blank' rel = "noopener noreferrer" href="https://github.com/KaikiWilson"><i className='bx bxl-github' ></i></a>
-                            </div>
-                            <button className="btn">
-                                <a target='_blank' rel = "noopener noreferrer" href='/Profile.pdf' download="Kaikiwilson-resume">My resume in PDF</a>
-                            </button>
+                        <p>Sou apaixonado por desenvolver soluções web utilizando as mais diversas ferramentas atuais do mercado, como em ReactJS/ReactTS e NextJS, além de preservar as boas práticas do processo de construção da aplicação, utilizando-se de Metodologias Ágeis que estão em constante crescimento e que estão também se aperfeiçoando todos os dias.</p>
+                                
+                                <div className="social-media">
+                                    <a target='_blank' rel = "noopener noreferrer" href="https://www.instagram.com/dev_okaijr/"><i className='bx bxl-instagram-alt' ></i></a>
+                                    <a target='_blank' rel = "noopener noreferrer" href="https://www.linkedin.com/in/kaikiwilson/"><i className='bx bxl-linkedin-square' ></i></a>
+                                    <a target='_blank' rel = "noopener noreferrer" href="https://github.com/KaikiWilson"><i className='bx bxl-github' ></i></a>
+                                </div>
+
+                                <button className="btn">
+                                    <a target='_blank' rel = "noopener noreferrer" href='/Profile.pdf' download="Kaikiwilson-resume">Meu curriculo digital</a>
+                                </button>
                     </div>
                 </section>
                 
