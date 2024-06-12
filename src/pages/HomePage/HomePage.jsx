@@ -44,7 +44,7 @@ const HomePage = () => {
                         <Link to="/" className="active">Home</Link>
                         <Link to="/About">About me</Link>
                         <Link to="/">Soft/Hard Skills</Link>
-                        <Link to="/">Projects</Link>
+                        <Link to="/Projects">Projects</Link>
                         <Link to="/">Contact</Link>
                     </nav>
                 </header>

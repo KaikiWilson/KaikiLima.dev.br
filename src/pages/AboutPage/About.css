@@ -36,7 +36,6 @@
     justify-content: center;
     align-items: end;
     width: 100vw;
-    height: max-content;
     background-color: #ffffff16;
 
     animation-name: left-slide-in;
@@ -45,12 +44,10 @@
 
 .box-who-i-am {
     display: flex;
-    position: absolute;
+    position: fixed;
     transform: translateY(50vh);
     justify-content: center;
-    align-items: start;
     width: 100vw;
-    height: max-content;
     background-color: #ffffff1d;
 
     animation-name: right-slide-in;

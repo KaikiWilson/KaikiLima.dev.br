@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    background-image: url('./img/backgroundi-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 100vw;
+    height: 5vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+main div {
+    background-color: #d1d1d1;
+    border-radius: 15px;
+    pad: 5px;
+    width: 80vw;
+    height: 100%;
+}

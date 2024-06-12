@@ -102,21 +102,21 @@ const AboutPage = () => {
                 
                 <div className="cards">
                     <div className="box-img">
-                        <img src={htmlimg} />
+                        <img src={htmlimg} alt='imagem do icone html'/>
                     </div>
                     <h1>Html5</h1>
                 </div>
 
                 <div className="cards">
                     <div className="box-img">
-                        <img src={cssimg} />
+                        <img src={cssimg} alt='imagem do icone css' />
                     </div>
                     <h1>Css3</h1>
                 </div>
 
                 <div className="cards">
                     <div className="box-img">
-                        <img src={javascriptimg} />
+                        <img src={javascriptimg} alt='imagem do icone javascript' />
                     </div>
                     <h1>Javascript</h1>
                 </div>
@@ -127,21 +127,21 @@ const AboutPage = () => {
                 
                 <div className="cards">
                     <div className="box-img">
-                        <img src={reactimg} />
+                        <img src={reactimg} alt='imagem do icone React' />
                     </div>
                     <h1>React</h1>
                 </div>
 
                 <div className="cards">
                     <div className="box-img">
-                        <img src={nodejsimg} />
+                        <img src={nodejsimg} alt='imagem do icone NodeJs' />
                     </div>
                     <h1>NodeJS</h1>
                 </div>
 
                 <div className="cards">
                     <div className="box-img">
-                        <img src={sqlimg} />
+                        <img src={sqlimg} alt='imagem do icone SQL' />
                     </div>
                     <h1>SQL</h1>
                 </div>
