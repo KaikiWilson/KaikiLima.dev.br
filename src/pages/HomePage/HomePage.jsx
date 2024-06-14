@@ -34,7 +34,7 @@ const HomePage = () => {
             
             <main className='body-Welcome'>
 
-                <header className="header">
+                <header className="header-home-page">
                     <a target='_blank' rel = "noopener noreferrer"  href="https://github.com/KaikiWilson" className="logo">@Kaikilima.Dev</a>
 
                     <nav className="navbar">

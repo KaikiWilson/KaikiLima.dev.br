@@ -10,7 +10,7 @@
     color: #fff;
   }
   
-  .header {
+  .header-home-page {
     position: fixed;
     top: 0;
     left: 0;
@@ -88,7 +88,7 @@
     width: 100%;
   }
 
-  .material-symbols-outlined:nth-of-type(1) {
+  .material-symbols-outlined:nth-of-type(0) {
     display: none;
   }
   
