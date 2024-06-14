@@ -1,5 +1,11 @@
+import Cards from '../../Components/ProjectsPage/Cards';
 import './ProjectsPage.css';
 import { Link } from 'react-router-dom';
+import folderIcon from './img/folder-svg.svg' 
+import homeIcon from './img/home-svg.svg'
+import reportIcon from './img/report-svg.svg'
+import trophyIcon from './img/trophy-svg.svg'
+import aplicationIcon from './img/application-svg.svg'
 
 
 
@@ -13,7 +19,7 @@ const ProjectsPage = () => {
             <main className='main-projects-page'>
                 
                 <sidebar className='sidebar-projects-page'>
-                    <Link to="/" className="active">
+                    <Link to="/" className="active-projects-page">
                         <span class="material-symbols-outlined home-icon">
                             home
                         </span>
@@ -26,15 +32,69 @@ const ProjectsPage = () => {
                     </div>
 
                     <div className='grid-projects'>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
-                        <div className='projects-card'></div>
+                        <Cards 
+                            Url={folderIcon}
+                            Title={'Card 1'}
+                            ProjectDate={'14/06/2024'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+
+                        <Cards 
+                            Url={homeIcon}
+                            Title={'Card 2'}
+                            ProjectDate={'05/04/2023'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
+                        <Cards 
+                            Url={reportIcon}
+                            Title={'Card 3'}
+                            ProjectDate={'22/01/2024'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
+                        <Cards 
+                            Url={trophyIcon}
+                            Title={'Card 4'}
+                            ProjectDate={'03/03/2024'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
+                        <Cards 
+                            Url={aplicationIcon}
+                            Title={'Card 5'}
+                            ProjectDate={'30/09/2021'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
+                        <Cards 
+                            Url={folderIcon}
+                            Title={'Card 6'}
+                            ProjectDate={'27/07/2022'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
+                        <Cards 
+                            Url={homeIcon}
+                            Title={'Card 7'}
+                            ProjectDate={'14/06/2024'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
+                        <Cards 
+                            Url={reportIcon}
+                            Title={'Card 8'}
+                            ProjectDate={'14/06/2024'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
+                        <Cards 
+                            Url={trophyIcon}
+                            Title={'Card 9'}
+                            ProjectDate={'14/06/2024'}
+                            Skills={'lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you lorem ipsum dolor meet you '}
+                        />
+                        
                     </div>
                 </section>
             </main>
