@@ -18,13 +18,13 @@ const ProjectsPage = () => {
 
             <main className='main-projects-page'>
                 
-                <sidebar className='sidebar-projects-page'>
+                <aside className='sidebar-projects-page'>
                     <Link to="/" className="active-projects-page">
-                        <span class="material-symbols-outlined home-icon">
+                        <span className="material-symbols-outlined home-icon">
                             home
                         </span>
                     </Link>
-                </sidebar>
+                </aside>
 
                 <section className='section-box'>
                     <div className='box-my-projects'>
