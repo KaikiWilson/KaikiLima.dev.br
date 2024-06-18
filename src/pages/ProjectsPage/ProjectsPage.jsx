@@ -20,7 +20,7 @@ const ProjectsPage = () => {
                 
                 <aside className='sidebar-projects-page'>
                     <Link to="/" className="active-projects-page">
-                        <span className="material-symbols-outlined home-icon">
+                        <span id='home-button-to-back' className="material-symbols-outlined home-icon">
                             home
                         </span>
                     </Link>

@@ -7,6 +7,9 @@ import './HomePage.css'
 
 
 const HomePage = () => {
+
+    const screen = window.screen.width
+    console.log(screen)
     
     const el = React.useRef(null);
 
@@ -23,7 +26,44 @@ const HomePage = () => {
           // Destroy Typed instance during cleanup to stop animation
           typed.destroy();
         };
-      }, []);
+      }, []
+    );
+
+
+    const action_menu = () => {
+        
+        if (screen <= '768') {
+        
+            
+            const menu_animation = () => {
+                const box_after_click_menu = window.document.getElementById("clickedDiv");
+    
+            
+                box_after_click_menu.style.animation = '1.25s menu_div'
+                box_after_click_menu.style.transition = "all 2s"
+    
+            }
+    
+            const menu_clicked = () => {
+                const box_after_click_menu = window.document.getElementById("clickedDiv");
+                const main_id = window.document.getElementById("main-id");
+                const header_id = window.document.getElementById("header-id");
+    
+                console.log(box_after_click_menu)
+                box_after_click_menu.style.display = 'flex';
+                box_after_click_menu.style.position = 'absolute';
+                box_after_click_menu.style.zIndex = '1'
+                main_id.style.zIndex = '0'
+                header_id.style.zIndex = '0'
+                box_after_click_menu.style.transition = "all 2s"
+    
+                menu_animation()
+            }
+    
+            menu_clicked()
+        }
+    
+    }
     
     return(
         <>
@@ -31,15 +71,22 @@ const HomePage = () => {
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
             
+            <div id='clickedDiv' className='box-after-menu'>
+                <Link to="/" className="active links-menu">Home</Link>
+                <Link className='links-menu' to="/About">About me</Link>
+                <Link className='links-menu' to="/">Soft/Hard Skills</Link>
+                <Link className='links-menu' to="/Projects">Projects</Link>
+                <Link className='links-menu' to="/">Contact</Link>
+            </div>
             
-            <main className='body-Welcome'>
+            <main id='main-id' className='body-Welcome'>
 
-                <header className="header-home-page">
+                <header id='header-id' className="header-home-page">
                     <a target='_blank' rel = "noopener noreferrer"  href="https://github.com/KaikiWilson" className="logo">@Kaikilima.Dev</a>
 
                     <nav className="navbar">
                     
-                        <span className='material-symbols-outlined none'>menu</span>
+                        <span onClick={action_menu} id='menu-button' className='material-symbols-outlined menu-home-page'>menu</span>
 
                         <Link to="/" className="active">Home</Link>
                         <Link to="/About">About me</Link>

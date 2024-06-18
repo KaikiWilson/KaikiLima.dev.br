@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
+  .box-after-menu {
+    display: none;
+  }
   
   .body-Welcome {
     background: rgb(0, 0, 59);
@@ -88,7 +92,7 @@
     width: 100%;
   }
 
-  .material-symbols-outlined:nth-of-type(0) {
+  .material-symbols-outlined:nth-of-type(1) {
     display: none;
   }
   
@@ -207,6 +211,8 @@
     box-shadow: 0px 0px 50px rgb(0, 255, 136);
     transition: .1s;
   }
+
+
   
   @keyframes slideRight {
     0% {
@@ -280,6 +286,16 @@
     } 
   }
 
+  @keyframes menu_div {
+    0% {
+      transform: translateY(-1000px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 
 
 
@@ -291,12 +307,51 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 768px) {
 
+  .box-after-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(29, 29, 29, 0.966);
+
+    transition: .75s;
+
+    .links-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 50px;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #ffffff15;
+      text-decoration: none;
+      color: rgb(0, 255, 136);
+      font-weight: 500;
+      
+  
+      transition: .75s;
+    }
+
+  }
+
   .header {
     position:absolute;
   }
 
+  .header-home-page {
+    display: flex;
+    width: 100vw;
+
+  }
+
   .logo {
+    display: flex;
+    width: 100vw;
     font-size: 15px;
+    justify-content: center;
   }
   
   .navbar a{
@@ -310,13 +365,21 @@
     color: #fff;
   }
 
+  #menu-button {
+    display: flex;
+    position: absolute;
+    margin-top: -5px;
+    transform: translateX(-50px);
+    padding: 0;
+    font-size: 30px;
+  }
+
   .material-symbols-outlined:nth-of-type(1) {
     font-variation-settings:
     'FILL' 0,
     'wght' 900,
     'GRAD' 0,
     'opsz' 24;
-    display: block;
   }
 
   .home {
