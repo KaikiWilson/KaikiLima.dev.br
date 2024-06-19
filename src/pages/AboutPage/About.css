@@ -8,6 +8,7 @@
 .Main-About {
     background-color: rgb(0, 0, 59);
     min-height: 100vh;
+    width: 100vw;
 }
 
 .Main-About::-webkit-scrollbar {
@@ -25,8 +26,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .75;
-
-    overflow: hidden;
 }
 
 #home-button-to-back-about-page {
@@ -57,10 +56,9 @@
 .box-first-h1 {
     display: flex;
     position: absolute;
-    transform: translateY(44.5vh);
+    transform: translateY(-5vh);
     justify-content: center;
-    align-items: end;
-    width: 100vw;
+    width: 100%;
     background-color: #ffffff16;
 
     animation-name: left-slide-in;
@@ -69,10 +67,10 @@
 
 .box-who-i-am {
     display: flex;
-    position: fixed;
-    transform: translateY(50vh);
+    position: absolute;
+    transform: translateY(1vh);
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     background-color: #ffffff1d;
 
     animation-name: right-slide-in;
@@ -338,10 +336,10 @@
 
 @keyframes left-slide-in {
     0% {
-        transform: translate(-105vw, 44.5vh)
+        transform: translate(-105vw, -5vh)
     }
     100% {
-        transform: translate(0vw, 44.5vh)
+        transform: translate(0vw, -5vh)
     }
 }
 
@@ -359,10 +357,10 @@
 
 @keyframes right-slide-in {
     0% {
-        transform: translate(105vw, 50vh)
+        transform: translate(105vw, 1vh)
     }
     100% {
-        transform: translate(0, 50vh);
+        transform: translate(0, 1vh);
     }
 }
 

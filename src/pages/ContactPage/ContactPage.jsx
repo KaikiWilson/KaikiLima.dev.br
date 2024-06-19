@@ -46,7 +46,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className="button-to-contact">
-                    <a className='enter-to-contact' href='http://localhost:3000/Contact'>
+                    <a target='_blank' rel = "noopener noreferrer" className='enter-to-contact' href='https://wa.me/+5585994080643'>
                         Entrar em contato <span id='arrow-right' class="material-symbols-outlined">mark_chat_unread</span>
                     </a>
                 </div>

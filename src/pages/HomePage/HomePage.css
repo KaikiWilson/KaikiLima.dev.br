@@ -59,7 +59,7 @@
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;    
-    animation: slideTop 5s ease forwards;
+    animation: slideTop 2s ease forwards;
     animation-delay: calc(.2s * var(--i));
     border-bottom: 2px solid transparent;
   

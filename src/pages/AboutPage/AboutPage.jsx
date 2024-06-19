@@ -77,13 +77,15 @@ const AboutPage = () => {
 
             <main className='Main-About' id='mainheight'>
                 <div id="box-h1-princ-id" className="box-h1-princ">
-                    <div id="box-first-h1-id" className="box-first-h1">
-                        <h1 className="first-h1">Afinal...</h1>
-                    </div>
+  
+                </div>
 
-                    <div id="box-who-i-am-id" className="box-who-i-am">
+                <div id="box-first-h1-id" className="box-first-h1">
+                        <h1 className="first-h1">Afinal...</h1>
+                </div>
+
+                <div id="box-who-i-am-id" className="box-who-i-am">
                         <h1 className="who-i-am">Quem sou eu?</h1>
-                    </div>
                 </div>
 
                 <Link to="/" className="active-projects-page">
