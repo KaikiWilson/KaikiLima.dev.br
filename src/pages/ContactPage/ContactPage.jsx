@@ -25,20 +25,20 @@ const ContactPage = () => {
 
                         <section>
 
-                            <h2 for="name">Nome</h2>
-                                <h3>Kaiki Lima</h3><br/>
+                            <h2 className='data-content-h2' for="name">Nome</h2>
+                                <h3 className='data-content'>Kaiki Lima</h3><br/>
 
-                            <h2 for="email">Email</h2>
-                                <h3 type="email" id="email" name="email">kaikiwilson.contato@gmail.com</h3><br/>
+                            <h2 className='data-content-h2' for="email">Email</h2>
+                                <h3 className='data-content' type="email" id="email" name="email">kaikiwilson.contato@gmail.com</h3><br/>
 
-                            <h2 for="telefone">Telefone Celular</h2>
-                                <h3 type="tel" id="telefone" name="telefone">85 99999-9999</h3><br/>
+                            <h2 className='data-content-h2' for="telefone">Telefone Celular</h2>
+                                <h3 className='data-content' type="tel" id="telefone" name="telefone">85 99999-9999</h3><br/>
 
-                            <h2 for="linkedin">Linkedin</h2>
-                                <h3 type="text" id="linkedin" name="linkedin">kaikiwilson</h3><br/>
+                            <h2 className='data-content-h2' for="linkedin">Linkedin</h2>
+                                <h3 className='data-content' type="text" id="linkedin" name="linkedin">kaikiwilson</h3><br/>
 
-                            <h2 for="instagram">Instagram</h2>
-                                <h3 type="text" id="instagram" name="instagram">kaikiwilson.dev</h3>
+                            <h2 className='data-content-h2' for="instagram">Instagram</h2>
+                                <h3 className='data-content' type="text" id="instagram" name="instagram">kaikiwilson.dev</h3>
 
                         </section>
 
@@ -46,7 +46,7 @@ const ContactPage = () => {
                 </div>
 
                 <div className="button-to-contact">
-                    <a href='http://localhost:3000/Contact'>
+                    <a className='enter-to-contact' href='http://localhost:3000/Contact'>
                         Entrar em contato <span id='arrow-right' class="material-symbols-outlined">mark_chat_unread</span>
                     </a>
                 </div>
