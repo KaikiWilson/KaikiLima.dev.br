@@ -103,9 +103,9 @@ const HomePage = () => {
                     </div>
 
                     <div className="home-content">
-                        <h3>Olá! Eu sou o</h3>
+                        <h3 className='hello-i-am-the'>Olá! Eu sou o</h3>
                         <h1>Kaiki Wilson</h1>
-                        <h3>Apenas um <span ref={el}></span></h3>
+                        <h3 className='hello-i-am-the'>Apenas um <span ref={el}></span></h3>
                         <p>Sou apaixonado por desenvolver soluções web utilizando as mais diversas ferramentas atuais do mercado, como em ReactJS/ReactTS e NextJS, além de preservar as boas práticas do processo de construção da aplicação, utilizando-se de Metodologias Ágeis que estão em constante crescimento e que estão também se aperfeiçoando todos os dias.</p>
                                 
                                 <div className="social-media">

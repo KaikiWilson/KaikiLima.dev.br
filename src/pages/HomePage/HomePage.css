@@ -110,7 +110,7 @@
     max-width: 600px;
   }
   
-  .home-content h3 {
+  .home-content .hello-i-am-the {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
@@ -118,13 +118,13 @@
     animation-delay: .7s;
   }
   
-  .home-content h3:nth-of-type(2) {
+  .home-content .hello-i-am-the:nth-of-type(2) {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
   }
   
-  .home-content h3 span {
+  .home-content .hello-i-am-the span {
     color: rgb(0, 255, 136);
   }
   
@@ -392,7 +392,7 @@
     width: 150px;
   }
 
-  .home-content h3 {
+  .home-content .hello-i-am-the {
     font-size: 20px;
     padding: 0 0 0 10px;
   }
@@ -402,7 +402,7 @@
     padding: 0 0 0 10px;
   }
 
-  .home-content h3:nth-of-type(2) {
+  .home-content .hello-i-am-the:nth-of-type(2) {
     font-size: 15px;
   }
 
