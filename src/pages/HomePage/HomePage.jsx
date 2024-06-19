@@ -73,10 +73,10 @@ const HomePage = () => {
             
             <div id='clickedDiv' className='box-after-menu'>
                 <Link to="/" className="active links-menu">Home</Link>
-                <Link className='links-menu' to="/About">About me</Link>
-                <Link className='links-menu' to="/">Soft/Hard Skills</Link>
-                <Link className='links-menu' to="/Projects">Projects</Link>
-                <Link className='links-menu' to="/">Contact</Link>
+                <Link to="/About" className='links-menu'>About me</Link>
+                <Link to="/" className='links-menu'>Soft/Hard Skills</Link>
+                <Link to="/Projects" className='links-menu'>Projects</Link>
+                <Link to="/Contact" className='links-menu'>Contact</Link>
             </div>
             
             <main id='main-id' className='body-Welcome'>
@@ -92,7 +92,7 @@ const HomePage = () => {
                         <Link to="/About">About me</Link>
                         <Link to="/">Soft/Hard Skills</Link>
                         <Link to="/Projects">Projects</Link>
-                        <Link to="/">Contact</Link>
+                        <Link to="/Contact">Contact</Link>
                     </nav>
                 </header>
 
