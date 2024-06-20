@@ -123,6 +123,10 @@ const HomePage = () => {
 
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
             </main>
+
+            <footer className='footer-homepage'>
+                <h3 className='footer-text-homepage'>Development with 💚 by<span className='kaiki-name-footer-homepage'>Kaikiwilson.dev</span></h3>
+            </footer>
         </>
     );
 }

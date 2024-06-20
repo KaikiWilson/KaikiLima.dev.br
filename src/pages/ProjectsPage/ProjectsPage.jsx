@@ -98,6 +98,10 @@ const ProjectsPage = () => {
                     </div>
                 </section>
             </main>
+
+            <footer className='footer-projectspage'>
+                <h3 className='footer-text-projectspage'>Development with 💚 by<span className='kaiki-name-footer-projectspage'>Kaikiwilson.dev</span></h3>
+            </footer>
         </>
     );
 };

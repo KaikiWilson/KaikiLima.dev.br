@@ -161,6 +161,10 @@ const AboutPage = () => {
                 </div>
 
             </main>
+
+            <footer className='footer-aboutpage'>
+                <h3 className='footer-text-aboutpage'>Development with 💚 by<span className='kaiki-name-footer-aboutpage'>Kaikiwilson.dev</span></h3>
+            </footer>
         </>
     )
 }

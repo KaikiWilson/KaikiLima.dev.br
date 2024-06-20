@@ -8,22 +8,24 @@
   .box-after-menu {
     display: none;
   }
-  
-  .body-Welcome {
-    background: rgb(0, 0, 59);
-    color: #fff;
-  }
-  
+
   .header-home-page {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 20px 10%;
     background: transparent;
     display: flex;
     justify-content: center;
     z-index: 100;
+  }
+  
+  .body-Welcome {
+    background: rgb(0, 0, 59);
+    color: #fff;
+    width: 100vw;
+    height: 95vh;
   }
   
   .logo {
@@ -212,7 +214,46 @@
     transition: .1s;
   }
 
+  
+.footer-homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 5vh;
+  background-color: rgb(0, 0, 59);
 
+  animation-name: fade-in;
+  animation-duration: 10s;
+}
+
+
+.footer-text-homepage {
+  display: flex;
+  flex-direction: column;
+  color: #CECECE;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 10px;
+}
+
+.kaiki-name-footer-homepage {
+  font-size: 12px;
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+  }
+
+  25% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
   
   @keyframes slideRight {
     0% {
@@ -428,6 +469,7 @@
   }
 
 }
+
 
 @media only screen and (width: 375px) and (height: 667px) {
   .home {

@@ -63,7 +63,7 @@ html {
     flex-direction: row;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
 }
 
 .section-box {
@@ -183,6 +183,30 @@ html {
 
     transition: .25s;
 }
+
+.footer-projectspage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    background-color: #000;
+}
+
+
+.footer-text-projectspage {
+    display: flex;
+    flex-direction: column;
+    color: #CECECE;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.kaiki-name-footer-projectspage {
+    font-size: 12px;
+}
+
 
 
 

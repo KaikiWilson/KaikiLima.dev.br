@@ -23,7 +23,7 @@ const ContactPage = () => {
                 <div className="content-form">
                     <div className='content-contact'>
 
-                        <section>
+                        <section id='section-contactpage'>
 
                             <h2 className='data-content-h2' for="name">Nome</h2>
                                 <h3 className='data-content'>Kaiki Lima</h3><br/>
@@ -32,13 +32,13 @@ const ContactPage = () => {
                                 <h3 className='data-content' type="email" id="email" name="email">kaikiwilson.contato@gmail.com</h3><br/>
 
                             <h2 className='data-content-h2' for="telefone">Telefone Celular</h2>
-                                <h3 className='data-content' type="tel" id="telefone" name="telefone">85 99999-9999</h3><br/>
+                                <h3 className='data-content' type="tel" id="telefone" name="telefone">85 99408-0643</h3><br/>
 
                             <h2 className='data-content-h2' for="linkedin">Linkedin</h2>
-                                <h3 className='data-content' type="text" id="linkedin" name="linkedin">kaikiwilson</h3><br/>
+                                <a href='https://www.linkedin.com/in/kaikiwilson' target='_blank' rel = "noopener noreferrer" className='data-content-a' type="text" id="linkedin" name="linkedin">{'<'}Clique para acessar{'>'}</a><br/>
 
                             <h2 className='data-content-h2' for="instagram">Instagram</h2>
-                                <h3 className='data-content' type="text" id="instagram" name="instagram">kaikiwilson.dev</h3>
+                                <a href='https://www.instagram.com/kaikiwilson.dev/' className='data-content-a' target='_blank' rel = "noopener noreferrer" type="text" id="instagram" name="instagram">{'<'}Clique para acessar{'>'}</a>
 
                         </section>
 
@@ -52,13 +52,20 @@ const ContactPage = () => {
                 </div>
             </div>
 
-            <Link to="/" className="active-projects-page">
-                    <span id='contact-button-to-back-about-page' className="material-symbols-outlined">
-                        home
-                    </span>
-            </Link>
+
+            <div className='box-absolute-home'>
+                <Link to="/" className="active-projects-page">
+                        <span id='contact-button-to-back-about-page' className="material-symbols-outlined">
+                            home
+                        </span>
+                </Link>
+            </div>
 
         </div>
+
+        <footer className='footer-contactpage'>
+                <h3 className='footer-text'>Development with 💚 by<span className='kaiki-name-footer'>Kaikiwilson.dev</span></h3>
+        </footer>
     </>
     );
 };
