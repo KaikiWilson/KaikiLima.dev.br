@@ -382,13 +382,11 @@
 
   }
 
-  .header {
-    position:absolute;
-  }
-
   .header-home-page {
     display: flex;
     width: 100vw;
+    background-color: #002b7c48;
+    border-radius: 0 0 50px 50px;
 
   }
 
@@ -411,6 +409,7 @@
   }
 
   #menu-button {
+    display: flex;
     margin-top: -5px;
     margin-left: 50px;
     padding: 0;
@@ -453,6 +452,20 @@
     font-size: 13px;
     letter-spacing: .25px;
     padding: 0 10px 0 10px;
+  }
+
+  .footer-homepage {
+    height: max-content;
+  }
+
+  .box-shadow-img {
+    display: flex;
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    transform: translate(65px, 125px);
+    box-shadow: 0 0 85px 100px blue;
   }
 
   @keyframes floatImage {

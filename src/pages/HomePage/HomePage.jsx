@@ -99,6 +99,7 @@ const HomePage = () => {
                 <section className="home">
 
                     <div className="home-img">
+                        <div className='box-shadow-img'></div>
                         <img src={myphoto} alt='KaikiLima'/>
                     </div>
 
