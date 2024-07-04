@@ -147,6 +147,16 @@
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
   }
+
+  .box-shadow-img {
+    display: flex;
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    transform: translate(250px, 45vh);
+    box-shadow: 0 0 250px 300px blue;
+  }
   
   .home-img img {
     max-width: 450px;
@@ -154,7 +164,7 @@
     margin-right: -20px;
     border-radius: 25% 85% 25% 100%;
     animation: zoonIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
+    animation-delay: 1s, 2s;
   }
   
   .social-media a {
