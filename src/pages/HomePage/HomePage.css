@@ -384,9 +384,11 @@
 
   .header-home-page {
     display: flex;
+    position: fixed;
     width: 100vw;
-    background-color: #002b7c48;
+    background-color: rgba(0, 0, 255, 0.678);
     border-radius: 0 0 50px 50px;
+    box-shadow: 0 0 2.5px .5px #000;
 
   }
 
@@ -426,7 +428,7 @@
 
   .home {
     flex-direction: column;
-    height: 100vh;
+    height: max-content;
     justify-content:start;
   }
   
@@ -456,6 +458,7 @@
 
   .footer-homepage {
     height: max-content;
+    padding: 50px 0 50px 0;
   }
 
   .box-shadow-img {
@@ -486,20 +489,20 @@
 }
 
 
-@media only screen and (width: 375px) and (height: 667px) {
+/* @media only screen and (width: 375px) and (height: 667px) {
   .home {
     height: 110vh;
   }
-}
+} */
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   
-}
+} */
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
 
-}
+} */

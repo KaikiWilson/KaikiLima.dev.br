@@ -88,15 +88,17 @@ const AboutPage = () => {
                         <h1 className="who-i-am">Quem sou eu?</h1>
                 </div>
 
+
+
+                <div id="box-bottom-content-id" className="box-bottom-content">
+                    <button onClick={explorer} id="btn-explorer" type="button">Descubra...</button>
+                </div>
+
                 <Link to="/" className="active-projects-page">
                     <span id='home-button-to-back-about-page' className="material-symbols-outlined">
                         home
                     </span>
                 </Link>
-
-                <div id="box-bottom-content-id" className="box-bottom-content">
-                    <button onClick={explorer} id="btn-explorer" type="button">Descubra...</button>
-                </div>
 
                 <h1 id="about-me-title-id" className="about-me-title">Sobre mim</h1>
 

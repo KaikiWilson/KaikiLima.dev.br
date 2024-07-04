@@ -449,3 +449,22 @@
         transform: translateY(0);
     }
 }
+
+
+@media only screen and (max-width: 768px) { 
+
+    #home-button-to-back-about-page {
+        position: inherit;
+        transform: translate(150px,150px);
+    }
+
+    .box-bottom-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: max-content;
+        transform: translateY(100px);
+    }
+
+}
