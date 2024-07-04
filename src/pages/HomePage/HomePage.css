@@ -411,8 +411,6 @@
   }
 
   #menu-button {
-    display: flex;
-    position: absolute;
     margin-top: -5px;
     margin-left: 50px;
     padding: 0;
