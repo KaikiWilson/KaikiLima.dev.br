@@ -58,8 +58,8 @@ const AboutPage = () => {
         
         const animations = () => {
             box_h1_princ.style.animation = '1.75s top-slide-out'
-            box_first_h1.style.animation = '1.5s left-slide-out'
-            box_who_i_am.style.animation = '1.5s right-slide-out'
+            box_first_h1.style.animation = '1.75s top-slide-out'
+            box_who_i_am.style.animation = '1.75s top-slide-out'
             box_bottom_content.style.animation = '1.75s top-slide-out'
             btn.style.animation = '1.25s fade-out'
     
