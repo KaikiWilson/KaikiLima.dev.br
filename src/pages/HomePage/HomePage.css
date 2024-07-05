@@ -55,7 +55,7 @@
     display: inline-block;
     height: max-content;
     position: relative;
-    font-size: 18px;
+    font-size: 25px;
     opacity: 0;
     color: #fff;
     text-decoration: none;
@@ -113,7 +113,7 @@
   }
   
   .home-content .hello-i-am-the {
-    font-size: 32px;
+    font-size: 33px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -131,7 +131,7 @@
   }
   
   .home-content h1 {
-    font-size: 56px;
+    font-size: 80px;
     opacity: 0;
     font-weight: 700;
     margin: -3px 0;
@@ -142,14 +142,14 @@
   }
   
   .home-content p {
-    font-size: 16px;
+    font-size: 21px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
   }
   
   .home-img img {
-    max-width: 450px;
+    max-width: 500px;
     opacity: 0;
     margin-right: -20px;
     border-radius: 25% 85% 25% 100%;
@@ -161,12 +161,12 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background: transparent;
     border: 2px solid rgb(0, 255, 136);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 37px;
     color: rgb(0, 255, 136);
     text-decoration: none;
     margin: 30px 15px 30px 0;
@@ -183,7 +183,7 @@
   }
   
   .btn a {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 600;
     text-decoration: none;
     color: #1f242d;
@@ -191,7 +191,7 @@
   
   .btn {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 20px 28px;
     background: rgb(0, 255, 136);
     border-radius: 40px;
     box-shadow: 0 0 25px rgb(0, 255, 136);
@@ -217,6 +217,7 @@
   
 .footer-homepage {
   display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -387,6 +388,7 @@
     position: fixed;
     width: 100vw;
     background-color: rgba(0, 0, 255, 0.678);
+    padding: 12.5px 10%;
     border-radius: 0 0 50px 50px;
     box-shadow: 0 0 2.5px .5px #000;
 
@@ -397,10 +399,6 @@
     width: 35vw;
     font-size: 15px;
     justify-content: center;
-  }
-  
-  .navbar a{
-    display: none;
   }
 
   .none {
@@ -428,7 +426,7 @@
 
   .home {
     flex-direction: column;
-    height: max-content;
+    height: 90vh;
     justify-content:start;
   }
   
@@ -436,29 +434,30 @@
     width: 150px;
   }
 
-  .home-content .hello-i-am-the {
+  .home .home-content .hello-i-am-the {
     font-size: 20px;
     padding: 0 0 0 10px;
   }
 
-  .home-content h1 {
-    font-size: 35px;
+  .home .home-content h1 {
+    font-size: 45px;
     padding: 0 0 0 10px;
   }
 
   .home-content .hello-i-am-the:nth-of-type(2) {
-    font-size: 15px;
+    font-size: 18px;
   }
 
-  .home-content p {
-    font-size: 13px;
+  .home .home-content p {
+    font-size: 14px;
     letter-spacing: .25px;
     padding: 0 10px 0 10px;
   }
 
   .footer-homepage {
     height: max-content;
-    padding: 50px 0 50px 0;
+    margin-top: 25px;
+    padding: 20px 0 20px 0;
   }
 
   .box-shadow-img {
@@ -497,12 +496,35 @@
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px) {
   
-} */
+  
+  .home-img img {
+    max-width: 325px;
+  }
 
+  .navbar a{
+    font-size: 17px;    
+  }
+  
+  
+  .home-content .hello-i-am-the {
+    font-size: 33px;
+  }
+  
+  .home-content h1 {
+    font-size: 57px;
+  }
+  
+  .home-content p {
+    font-size: 17px;
+  }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (max-width: 1200px) {
+  .btn {
+    padding: 10px 20px;
+  }
 
-} */
+  .btn a {
+    font-size: 17px;
+  }
+}
